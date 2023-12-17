@@ -23,11 +23,12 @@ local function updateShader(object, attachedTo)
 	local shader = shaders[object]
 	if not shader then
 		shader = dxCreateShader(SHADER_PATH, 0, 0, false, "object")
+		engineApplyShaderToWorldTexture(shader, "*", object, false)
 		shaders[object] = shader
 	end
 
 	dxSetShaderValue(shader, "lighting", getElementLighting(attachedTo))
-	engineApplyShaderToWorldTexture(shader, "*", object, false)
+
 	return true
 end
 
