@@ -2,8 +2,8 @@
 
 
 > [!IMPORTANT]  
-> New function **[setElementLighting](https://wiki.multitheftauto.com/wiki/SetElementLighting)** is available (since 1.6.0 r22862)!
-> Please just use **client-side** script below instead of this shader.
+> **New function [setElementLighting](https://wiki.multitheftauto.com/wiki/SetElementLighting) is available (since 1.6.0 r22862)!
+> Please just use **client-side** script below instead of this shader.**
 >	```lua
 >	
 >	addEventHandler("onClientPedsProcessed", root,
