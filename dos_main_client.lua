@@ -32,13 +32,16 @@ local function updateShader(object, attachedTo)
 	return true
 end
 
-addEventHandler("onClientRender", root,
+addEventHandler("onClientPedsProcessed", root,
 	function()
 
 		for i, object in ipairs(getElementsByType("object", root, true)) do
 			local attachedTo = getElementAttachedTo(object)
-			if attachedTo and getElementLighting(attachedTo) then
-				updateShader(object, attachedTo)
+			if attachedTo then
+				local lighting = getElementLighting(attachedTo)
+				if lighting then
+					updateShader(object, attachedTo)
+				end
 			else
 				removeShader(object)
 			end

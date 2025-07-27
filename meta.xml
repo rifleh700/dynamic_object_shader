@@ -2,7 +2,7 @@
 
 	<info
 		author="rifleh700"
-		version="1.0.0"
+		version="1.1.0"
 		name="dynamic_object_shader"
 		description="Dynamic object shader. Fixes attached objects lighting."
 		type="script"
@@ -11,5 +11,6 @@
 	<file src="dos.fx" />
 
 	<script src="dos_main_client.lua"					type="client" />
+	<script src="dos_test_client.lua"					type="client" />
 
 </meta>
